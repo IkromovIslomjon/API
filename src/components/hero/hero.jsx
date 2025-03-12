@@ -13,7 +13,12 @@ class Hero extends React.Component {
       error:false
     };
     this.movieService = new MovieService();
-    this.getRandomMovie();
+   
+   
+  }
+
+  componentDidMount(){
+    this.getRandomMovie()
   }
 
   getRandomMovie = () => {
